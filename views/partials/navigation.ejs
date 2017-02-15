@@ -1,0 +1,15 @@
+ <div class="col-sm-2 sidenav">
+    <h4>Inventory</h4>
+    
+    <ul>
+        <% inventories.forEach(function(node) { %>
+            <li>
+                <a href="/inventory/<%= node.id%>" >
+                    <%=node.name %>
+                </a>
+            </li>
+            <% }); %>
+    </ul>
+    <br>
+
+</div>
